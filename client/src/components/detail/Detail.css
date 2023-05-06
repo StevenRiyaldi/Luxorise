@@ -1,0 +1,81 @@
+.container-detail {
+  display: flex;
+  width: 100%;
+  height: 110vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--primary);
+}
+
+.container-detail .detail {
+  padding: 150px 20px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.container-detail .detail .left .text a {
+  color: grey;
+  text-decoration: none;
+}
+
+.container-detail .detail .left {
+  display: flex;
+  color: grey;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.container-detail .detail .left img {
+  width: 400px;
+}
+
+.container-detail .detail .left span {
+  padding: 0 10px;
+}
+
+.container-detail .detail .right {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+}
+
+.container-detail .detail .right h1 {
+  font-size: 1.5rem;
+}
+
+.container-detail .detail .right .size,
+.qty,
+.stock,
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-detail .detail .right .size input {
+  width: fit-content;
+  height: min-content;
+}
+
+.container-detail .detail .right .qty button{
+  padding: 10px 15px;
+}
+
+.container-detail .detail .right .cart button{
+  display: flex;
+  gap: 15px;
+  padding: 10px 50px;
+  font-weight: 700;
+}
+
+.container-detail .detail .right span{
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+

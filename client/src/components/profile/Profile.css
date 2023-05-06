@@ -1,0 +1,81 @@
+.container-profile {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+
+.container-profile .profile {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+  width: 800px;
+  justify-content: space-between;
+}
+
+.container-profile .profile .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-profile .profile .left .file {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.container-profile .profile .left .file input[type="file"] {
+  opacity: 0%;
+  transform: scale(4);
+  padding: 20% 0 4% 3%;
+}
+
+.container-profile .profile .left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(224, 224, 224);
+}
+
+.container-profile .profile .left #button {
+  display: block;
+}
+
+.container-profile .profile .right {
+  width: 55%;
+  margin-right: 5%;
+  margin-top: 6%;
+}
+
+.container-profile .profile input[type="text"] {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  border: none;
+  margin: 10px 0 20px;
+  background-color: rgb(224, 224, 224);
+  padding: 0.7rem 1rem;
+}
+
+.container-profile .profile label {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.container-profile .profile #button {
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  padding: 0.7rem 1rem;
+  background-color: rgb(224, 224, 224);
+  font-weight: 700;
+  cursor: pointer;
+}

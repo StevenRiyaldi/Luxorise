@@ -1,0 +1,44 @@
+.container-footer {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  padding: 50px 100px 200px 50px;
+  color: white !important;
+}
+
+.container-footer .deskripsi span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.3rem;
+}
+
+.container-footer p {
+  margin-top: 25px;
+}
+
+.container-footer .about a {
+  display: block;
+  margin-top: 25px;
+  color: white;
+}
+
+.instagram {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.instagram a {
+  color: white;
+}
+
+@media (max-width: 950px) {
+  .container-footer {
+    flex-direction: column;
+    align-items: left;
+    gap: 30px;
+    font-size: 75% !important;
+    padding-bottom: 50px;
+  }
+}

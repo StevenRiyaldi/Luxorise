@@ -1,0 +1,143 @@
+/* navbar */
+.container-navbar {
+  display: flex;
+  background-color: black;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 2%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.container-navbar a {
+  text-decoration: none;
+}
+
+.container-navbar .navbar-nav {
+  flex: 4;
+}
+
+.container-navbar .navbar-logo {
+  margin-right: 30px;
+}
+
+.container-navbar .navbar-left {
+  flex: 3;
+}
+
+.container-navbar .navbar-left,
+.container-navbar .navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-navbar .navbar-right img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.container-navbar .navbar-extra {
+  margin-right: 15px;
+}
+
+.container-navbar .navbar-nav a,
+.container-navbar .navbar-extra a {
+  padding: 15px;
+  color: white;
+  display: inline-block;
+}
+
+.container-navbar .navbar-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.container-navbar .menu {
+  display: none;
+}
+
+.container-navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+  transform: scaleX(0) translateY(30px);
+  transition: 0.2s linear;
+}
+
+.container-navbar a:hover::after {
+  transform: scaleX(1) translateY(30px);
+}
+
+#icon {
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.container-navbar .cart,
+.container-navbar .user-profile,
+.container-navbar .menu {
+  color: white;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 775px) {
+  .container-navbar .menu {
+    display: flex;
+  }
+
+  .navbar-icon .search {
+    margin-right: 10px;
+  }
+
+  .navbar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: black;
+    width: 300px;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .container-navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .container-navbar .navbar-nav a {
+    display: block;
+    color: white;
+  }
+
+  .container-navbar .navbar-nav a::after {
+    transform: scaleX(0) translateY(20px);
+    transform-origin: 0 0;
+  }
+
+  .container-navbar .navbar-nav a:hover::after {
+    transform: scalex(0.5) translateY(20px);
+  }
+
+  .container-navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
